@@ -28,15 +28,28 @@ let prompt = require('prompt-sync')()
 
 let unit = +(prompt("enter your unit "));
 
-if(unit>0 && unit<=100){
-    console.log(unit*4.2);
+if (unit >= 0 && unit <= 100) {
+    console.log(
+
+        (unit * 4.20)
+    );
 }
-else if (unit>=100 && unit<=200){
-    console.log((100*4.2)+(unit-100)*6);
+else if (unit >= 101 && unit <= 200) {
+    console.log(
+         ((100 * 4.2) + (unit - 100) * 6)
+
+    );
+    
 }
-else if (unit>=200 && unit<=300){
-    console.log((100*4.2)+(100*6)+(unit-200)*8);
+else if (unit >= 201 && unit <= 400) {
+    console.log(
+         ((100 * 4.2) + (100 * 6) + (unit - 200) * 8)
+    );
+    
 }
-else{
-    console.log((100*4.2)+(100*6)+(200*8)+(unit-400)*13);
+else {
+    console.log(
+         ((100 * 4.2) + (200 * 6) + (300 * 8) + (unit - 400) * 13)
+    );
+    
 }
